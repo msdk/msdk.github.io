@@ -17,7 +17,7 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/msdk">View on GitHub</a>
-	  <img src="images/msdk_logo.png" width="90" height="90" align="left" style="background: white; margin-right: 25px;">
+
           <h1 id="project_title">MSDK</h1>
           <h2 id="project_tagline">Mass Spectrometry Development Kit</h2>
 
@@ -36,7 +36,6 @@
 <li><a href="https://code.google.com/p/guineu/">Guineu</a></li>
 <li><a href="http://software.iab.keio.ac.jp/jdamp/">JDAMP</a></li>
 <li><a href="http://maltcms.sourceforge.net">Maltcms</a></li>
-<li><a href="http://sing.ei.uvigo.es/mass-up">Mass-Up</a></li>
 <li><a href="https://bitbucket.org/sbeisken/masscascade/">MassCascade</a></li>
 <li><a href="http://bimsbstatic.mdc-berlin.de/kempa/software/kempaSoftware.html">Maui-VIA</a></li>
 <li><a href="http://proteomics.fhcrc.org/CPL/msinspect/index.html">msInspect</a></li>
@@ -48,9 +47,29 @@
 </ul>
 
 <h3>
-<a id="why-we-need-msdk" class="anchor" href="#why-we-need-msdk" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why do we need MSDK?</h3>
+<a id="why-we-need-msdk" class="anchor" href="#why-we-need-msdk" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why we need MSDK?</h3>
 
-<p>While competition among various algorithms is beneficial for the progress of research, the absence of a common data model and development platform makes it difficult and laborious to evaluate the results and performance of different algorithms. MSDK addresses this issue for the Java platform, while other projects such as <a href="http://open-ms.sourceforge.net">OpenMS</a> or <a href="http://proteowizard.sourceforge.net">ProteoWizard</a> address this issue in C/C++ platforms. The advantages of Java are its multi-platform nature and easy, rapid development in a higher-level language compared to C/C++.</p>
+<p>While competition among various algorithms is beneficial for the progress of research, the absence of a common data model and development platform makes it difficult and laborious to evaluate the results and performance of different algorithms. MSDK addresses this issue for the Java platform, while other projects such as <a href="http://open-ms.sourceforge.net">OpenMS</a> or <a href="http://proteowizard.sourceforge.net">ProteoWizard</a> address this issue in C/C++. The advantages of Java are its multi-platform nature and easy, rapid development in a higher-level language compared to C/C++.</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<h4>
+<a id="api" class="anchor" href="#api" aria-hidden="true"><span class="octicon octicon-link"></span></a>API</h4>
+
+<p>Please see the complete <a href="http://msdk.github.io/api/">MSDK API</a>.</p>
+
+<h4>
+<a id="maven-artifacts" class="anchor" href="#maven-artifacts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maven artifacts</h4>
+
+<p>MSDK jars are automatically deployed to Maven Central. In order to use MSDK, simply add the following dependency to your pom.xml:</p>
+
+<pre><code> &lt;dependency&gt;
+    &lt;groupId&gt;io.github.msdk&lt;/groupId&gt;
+    &lt;artifactId&gt;msdk-all&lt;/artifactId&gt;
+    &lt;version&gt;0.0.3&lt;/version&gt;
+ &lt;/dependency&gt;
+</code></pre>
 
 <h3>
 <a id="java-version" class="anchor" href="#java-version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java version</h3>
@@ -69,12 +88,12 @@
 <h3>
 <a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributors</h3>
 
-<p>Please use GitHub's <a href="https://github.com/msdk/msdk/graphs/contributors">statistics</a> to see who has contributed to this project so far. The <a href="https://help.github.com/articles/using-git-blame-to-trace-changes-in-a-file">Git Blame</a> feature can be used to track the authorship of each individual line in the source codes.</p>
+<p>Please use GitHub's <a href="https://github.com/msdk/msdk/graphs/contributors">statistics</a> to see who has contributed to this project so far. The <a href="https://help.github.com/articles/using-git-blame-to-trace-changes-in-a-file">Git Blame</a> feature can be used to track the authorship of each individual line in the source files.</p>
 
 <h3>
 <a id="how-to-join-this-project" class="anchor" href="#how-to-join-this-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to join this project</h3>
 
-<p>Please join our <a href="https://groups.google.com/forum/#!forum/msdk-devel">Google Group</a> and tell us about your ideas. Contributions to MSDK can be made through GitHub's standard <a href="https://help.github.com/articles/using-pull-requests/">Pull Request</a> mechanism. If you are not familiar with this mechanism, please read our brief <a href="pull-request-tutorial.html">tutorial</a>. Before creating a Pull Request, please make sure that you agree with your code being distributed as part of MSDK under the above-mentioned license.</p>
+<p>Please join our <a href="https://groups.google.com/forum/#!forum/msdk-devel">Google Group</a> and tell us about your ideas. Contributions to MSDK can be made through GitHub's standard <a href="https://help.github.com/articles/using-pull-requests/">Pull Request</a> mechanism. Before creating a Pull Request, please make sure that you agree with your code being distributed as part of MSDK under the above-mentioned license.</p>
 
 <h3>
 <a id="how-to-report-problems" class="anchor" href="#how-to-report-problems" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to report problems</h3>
@@ -84,7 +103,7 @@
 <h3>
 <a id="source-codes" class="anchor" href="#source-codes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Source codes</h3>
 
-<p>MSDK source codes are available from our <a href="https://github.com/msdk/msdk">GitHub repository</a>. To clone the source code tree, you can use this command:</p>
+<p>MSDK source codes are available from our <a href="https://github.com/msdk/msdk">GitHub repository</a>. To clone the source code tree. you can use this command:</p>
 
 <pre><code>$ git clone https://github.com/msdk/msdk.git
 </code></pre>
@@ -99,7 +118,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
